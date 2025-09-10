@@ -11,7 +11,7 @@ if(!token){
 }
 
 
-const res =await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${process.env.NEXTAUTH_URL}`,{
+const res =await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${process.env.NEXT_PUBLIC_BASE_URL}`,{
     cache:'no-store',
     method:'POST',
     headers:{
