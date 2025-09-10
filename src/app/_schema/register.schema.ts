@@ -1,0 +1,13 @@
+import z from "zod";
+export  const regSchema =z.object({
+    name:z.string().nonempty("this field is required").min(2,"min length is 2 characters").max(25,"max length is 15 characters"),
+    email:z.string().nonempty("this field is required").email("not valid email"),
+    password:z.string().nonempty("this field is required").regex(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/,'InValid Password'),
+    rePassword:z.string().nonempty("this field is required"),
+    phone:z.string().nonempty("this field is required").regex(/^(010|011|012|015)[0-9]{8}$/,'This is invalid number')
+})
+.refine((data)=>
+data.rePassword===data.password,{
+    path:['rePassword'],
+    message:'Not the same'
+})
