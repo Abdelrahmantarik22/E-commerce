@@ -36,7 +36,7 @@ else{
   <div>Stock Status</div>
   <div>Actions</div>
 </div>
-{ wishProducts?.data.map((prod)=> <WishCard prod={prod} key={prod._id}></WishCard>)}    
+{wishProducts&& wishProducts?.data.map((prod)=> <WishCard prod={prod} key={prod._id}></WishCard>)}    
       </div>
   )
 }

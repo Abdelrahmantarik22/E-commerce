@@ -22,7 +22,7 @@ export default function RelatedSwiper({productt}:{productt:Daum[]}) {
   }}
     className='w-full '
     >
-         {productt.map((product)=>(
+         {productt&&productt.map((product)=>(
 
         <SwiperSlide key={product._id}> <Link href={`/product/${product._id}`}><Image className='size-20 rounded-full' src={product.imageCover} alt={`${product.title}`} width={200} height={200} ></Image></Link> </SwiperSlide>
    ))}

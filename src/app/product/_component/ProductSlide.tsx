@@ -36,7 +36,7 @@ export default function ProductSlide({
          <div className="custom-prev absolute top-1/2 translate-y-1/2 cursor-pointer rounded-full bg-main p-2.5 z-10 size-10 flex justify-center items-center  left-0"><i className="fa-solid fa-arrow-left"></i></div>
       <div className="custom-next absolute top-1/2 translate-y-1/2 cursor-pointer rounded-full bg-main p-2.5 z-10 size-10 flex justify-center items-center right-0 "><i className="fa-solid fa-arrow-right"></i></div>
 
-        {allProduct.map((prod: ProductInterface) => (
+        {allProduct&&allProduct.map((prod: ProductInterface) => (
           <SwiperSlide key={prod._id} className="w-full">
              <div className="w-full flex flex-col px-3">
       <div className=" shadow-lg shadow-ma my-3  rounded-lg dark:shadow-amber-50">

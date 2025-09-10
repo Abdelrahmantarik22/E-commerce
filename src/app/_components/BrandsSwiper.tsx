@@ -21,7 +21,7 @@ export default function BrandsSwiper({productt}:{productt:BrandsData[]}) {
   }}
     className='w-full '
     >
-         {productt.map((product)=>(
+         {productt&&productt.map((product)=>(
 
         <SwiperSlide key={product._id}> <div className='flex flex-col items-center' >
 

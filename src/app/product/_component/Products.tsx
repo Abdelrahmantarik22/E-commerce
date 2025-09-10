@@ -18,7 +18,7 @@ export default function Products() {
     <div  className='my-10'>
 
    <div className="flex flex-wrap ">
-{data?.data.map((prod:ProductInterface)=>( <ProductCard key={prod._id} prod={prod} ></ProductCard>))}
+{data&&data?.data.map((prod:ProductInterface)=>( <ProductCard key={prod._id} prod={prod} ></ProductCard>))}
    </div>
    <div className='flex items-center gap-3 justify-center m-7 '>
     <Button onClick={()=>{
