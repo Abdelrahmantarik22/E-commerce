@@ -65,7 +65,7 @@ async function onSubmit(data:{name:string,email:string,phone:string}){
 
   return (
   <div className='absolute inset-0 backdrop-blur-lg flex justify-center items-center  '>
-        <div className='flex flex-col items-center md:w-3/6 w-full mx-auto p-5 dark:md:bg-[#101828] bg-light shadow-lg rounded-lg'>
+        <div className='flex flex-col items-center md:w-3/6 w-full mx-auto p-5 dark:md:bg-[#101828] md:bg-light shadow-lg rounded-lg'>
            
          
             <div className='w-4/6 mx-auto'>
