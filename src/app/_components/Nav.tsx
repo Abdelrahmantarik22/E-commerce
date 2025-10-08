@@ -56,7 +56,7 @@ if (theme==='dark') {
 
   return (
     <>
-      <nav className="bg-gray-100   dark:bg-gray-900 p-3 sticky top-0 left-0 w-full z-10 ">
+      <nav className="bg-gray-100   dark:bg-gray-900 p-3 sticky top-0 left-0 w-full z-10  shadow-lg shadow-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 p-1">
           <Link
             href="/"
